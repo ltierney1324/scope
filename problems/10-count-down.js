@@ -28,7 +28,10 @@ Example 4:
 
 ***********************************************************************/
 
-// Your code here 
+// Your code here
+const countDownTimer = ((num) => {
+  return function()
+})
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

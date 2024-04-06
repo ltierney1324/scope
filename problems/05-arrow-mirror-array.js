@@ -10,7 +10,17 @@ arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
 
-// Your code here 
+// Your code here
+const arrowMirrorArray = ((array) => {
+let array1= array;
+let array2 = [];
+for(let i= array.length -1; i>=0; i--){
+  let val = array[i];
+  array2.push(val);
+}
+return array1.concat(array2);
+});
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

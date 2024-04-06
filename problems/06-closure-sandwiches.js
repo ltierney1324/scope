@@ -17,7 +17,19 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// Your code here 
+// Your code here
+const sandwichMaker = (() => {
+  let ingredients = ['tomato'];
+
+  return function(newIngredient){
+    if(newIngredient){
+      ingredients.push(newIngredient);
+    }
+    return 'One sandwich with ' + ingredients.join(' and ');
+  };
+
+
+});
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
